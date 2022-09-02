@@ -6,7 +6,7 @@
 </head>
 <body>
 <form th:action="@{/user/login}" method="post" style="max-width: 400px; margin: 0 auto;">
-    <h2>User Login - CodeJava.net</h2>
+    <h2>User Login </h2>
      
     <div th:if="${param.error}">
         <h4 style="color: red">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</h4>

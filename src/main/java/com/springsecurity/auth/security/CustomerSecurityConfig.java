@@ -9,12 +9,14 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.*;
 import org.springframework.security.web.SecurityFilterChain;
 
+import com.springsecurity.auth.service.CustomUserDetailsService;
+
 @Configuration
 @Order(2)
 public class CustomerSecurityConfig {
 	 @Bean
 	    public UserDetailsService customerUserDetailsService() {
-	        return new CustomerUserDetailsService();
+	        return new CustomUserDetailsService();
 	    }
 	 
 	    @SuppressWarnings("deprecation")

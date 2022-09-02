@@ -9,7 +9,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @Order(2)
 public class UserSecurityConfig {
-    @Bean
+   @Bean
     public SecurityFilterChain filterChain2(HttpSecurity http) throws Exception {
          
         http.antMatcher("/user/**")
